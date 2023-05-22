@@ -23,8 +23,9 @@ let sumArrow = (num1, num2) => {
     return [sum, x]
 }
 
-let result = sumArrow(5,9);
-console.log(result);
+let result2 = sumArrow(5,9);
+console.log(result2);
+
 // 3. Write a function that returns another function. (use arrow functions please)
 const funkyFunc = (x) => {
     return (y) =>{
@@ -177,20 +178,20 @@ const userPersonalData = {
 //  accomplishments: ['won award for being good gamer', 'won 1st win', 'got good score on the weekend'],
 // }
 
-const userPersonalData = {
+const userPersonalData1 = {
   name: 'peter',
   age: '56',
   birthday: 'jan 1st',
 };
 
-const userGameData = {
+const userGameData1 = {
   score: 4546,
   accomplishments: ['won award for being good gamer', 'won 1st win', 'got good score on the weekend'],
 };
 
 const user = {
-  ...userPersonalData,
-  ...userGameData,
+  ...userPersonalData1,
+  ...userGameData1,
 };
 
 console.log(user);
@@ -215,7 +216,7 @@ const accomplishmentsCopy = [...user.accomplishments];
 //  11.Given the object bellow, use object destructuring to get the favorite food value (user.name.favoriteThings.food)
 //  and store it in a variable name food
 
-var user = {
+let user2 = {
   name: 'pete',
   age: '32',
   favoriteThings: {
@@ -225,17 +226,17 @@ var user = {
  };
 
 
-const { favoriteThings: { food } } = user;
+let { favoriteThings: { food } } = user;
  
 // 12. Once you have grabbed the favorite foods. Destructure the food array to grab only the first 2 values. //
 
-const { favoriteThings: { food: [firstFood, secondFood] } } = user;
+let { favoriteThings: { food: [firstFood, secondFood] } } = user;
 
 // 13. use object destructuring and the rest operator to transform the following array into 3 variables: name, age, and food.
 //    the food variable should have all the array items starting from the third one.
 const data = ['peter', '34', 'apple', 'oranges', 'pizza', 'tacos'];
 
-const [name, age, ...food] = data;
+const [name, age, ...food2] = data;
 
 // 14. use object destructuring to grab the following from the userInfo object:
 // - The user's name and in a constant named userName.
